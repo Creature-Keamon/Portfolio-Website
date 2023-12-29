@@ -1,7 +1,88 @@
 <!DOCTYPE html>
+
+<style>
+    * { margin:0; padding:0 }
+    html, body {
+        font-family: "swap", sans-serif;
+        height: 100%
+    }
+
+    .body {
+        background-color: #E0C87E;
+    }
+
+    .navigation-pane {
+        height: 100%;
+        width: 170px;
+        background-color: rgb(240, 240, 240);
+    }
+    
+    .nav-buttons {
+        text-align: center;
+        width: 170px;
+        height: 100%;
+        position: absolute;
+        top: 25%;
+    }
+
+    .nav-link-wrapper {
+        padding-top: 50px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+        text-transform: uppercase;
+        font-size: large;
+    }
+
+    .nav-link-wrapper a {
+        color: #7A2981;
+        text-decoration: none;
+        transition: color 0.5s;
+    }
+
+    .nav-link-wrapper:hover {
+        border-bottom: 1px solid black;
+    }
+
+    .nav-link-wrapper a:hover {
+        color: #0F2D52;
+    }
+
+    .active-nav-link {
+        border-bottom: 1px solid #0F2D52;
+    }
+
+    .active-nav-link a {
+        color: #0F2D52 !important;
+    }
+
+</style>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <title> Shawn Neal | Home</title>
-    </head>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Shawn Neal | Home</title>
+</head>
+
+<body>
+    <div class="navigation-pane"></div>
+    <div class="nav-buttons">
+        <div class="nav-link-wrapper">
+            <a href="Homepage.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+            <a href="Homepage.html">About</a>
+        </div>
+        <div class="nav-link-wrapper">
+            <a href="Homepage.html">Projects</a>
+        </div>
+        <div class="nav-link-wrapper">
+            <a href="Homepage.html">Contact</a>
+        </div>
+        <div class="nav-link-wrapper">
+            <a href="Homepage.html">Curriculum Vitae</a>
+        </div>
+    </div>
+    
+</body>
 </html>
+
