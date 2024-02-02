@@ -1,0 +1,203 @@
+<style>
+    * { margin:0; padding:0 }
+
+    html, body {
+        font-family: "swap", Arial, Helvetica, sans-serif;
+        height: 100%
+    }
+
+    body {background-color: #3954ff;}
+
+    .nav-buttons {
+        text-decoration: none;
+        width: 173px;
+        height: 100%;
+        top: 36%;
+        position: fixed;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: 1; 
+    }
+
+    .nav-link-wrapper {
+        margin-top: 30px;
+        font-size: 25px;
+        transition: transform 0.5s;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .nav-link-wrapper a {
+        color: white;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .nav-link-wrapper:hover {
+        transform: rotate(-15deg) scale(1.3);
+    }
+
+    .header {
+        margin-top: 50px;
+        width: 600px;
+    }
+
+    .content {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-left: 250px;
+    }
+
+    .title{
+        color: white;
+    }
+
+    .name{
+        font-size: 100px;
+        color: white;
+    }
+
+    .header-flavor{
+        color: white;
+        font-size: large;
+        text-align: left;
+        width: 10%;
+    }
+
+    .about-flavor {
+        color: white;
+        padding-top: 50px;
+    }
+
+    .collapsible {
+        width:70%;
+        height: 50px;
+        cursor:pointer;
+        outline: none;
+        background-color: #273cc5;
+        border-radius: 10px;
+        border:none;
+    }
+
+    .collapsible h3{
+        float: left;
+        color: white;
+        margin-left: 15px;
+        font-size: 30px;
+        margin-top: 8px;
+    }
+
+    .collapsible:after {
+        color: white;
+        content:'\01F893';
+        float: right;
+        margin-right: 15px;
+        font-size: 70px;
+    }
+
+    .collapsible-content{
+        color: white;
+        font-size: x-large;
+    }
+
+</style>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Shawn Neal | About</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-buttons">
+            <div class="nav-link-wrapper">
+                <a class="home" href="Homepage.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a class="centre" href="About.html">About</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a class="centre" href="Projects.html">Projects</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="Homepage.html">Contact</a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="header">
+                <h2 class="title">Hey There!</h2>
+                <h1 class="name">I'm Shawn.</h1>
+            </div>
+            <a class="header-flavor">I am student at the University of Canterbury, studying a Bachelor of Science, majoring in Computer Science and minoring in Game Arts, alongside Mathematics and Music.</a>
+            <div class="dropdowns">
+                <button class="collapsible">
+                    <h3>Skills</h3>
+                </button>
+                <div class="collapsible-content">
+                    <h3>I am;</h3>
+                    <ul>
+                        <li class="creative">Creative;</li>
+                        <li>Flexible;</li>
+                        <li>Responsible;</li>
+                        <li>Reliable;</li>
+                        <li>Engaging;</li>
+                        <li>Technologically Literate;</li>
+                        <li>A Problem Solver;</li>
+                        <li>Open Minded;</li>
+                        <li>Punctual;</li>
+                        <li>A Good Communicator (Written and Verbal)</li>
+                        <li>A Constructive Collaborator</li>
+                    </ul>
+                </div>
+                
+                <h2 class="about-flavor"></h2>
+                <button class="collapsible">
+                    <h3>Education</h3>
+                </button>
+                <div class="collapsible-content">
+                    <h3>Rolleston College</h3>
+                    <ul>
+                        <li>Flexible;</li>
+                        <li>Responsible;</li>
+                        <li>Reliable;</li>
+                        <li>Engaging;</li>
+                        <li>Technologically Literate;</li>
+                        <li>A Problem Solver;</li>
+                        <li>Open Minded;</li>
+                        <li>Punctual;</li>
+                        <li>A Good Communicator (Written and Verbal)</li>
+                        <li>A Constructive Collaborator</li>
+                    </ul>
+                </div>
+                
+                <h2 class="about-flavor">Work Experience</h2>
+                <button class="collapsible"></button>
+                <div class="collapsible-content">
+                    <h3></h3>
+                    <ul>
+                        <li>Flexible;</li>
+                    </ul>    
+                </div>
+                
+                <h2 class="about-flavor">Extra-Curricular</h2>
+                <button class="collapsible"></button>
+                <div class="collapsible-content">
+                    <h3></h3>
+                    <ul>
+                        <li>Flexible;</li>
+                    </ul>
+
+                <h2 class="about-flavor">Hobbies and Interests</h2>
+                <button class="collapsible"></button>
+                <div class="collapsible-content">
+                    <h3></h3>
+                    <ul>
+                        <li>Flexible;</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
