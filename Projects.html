@@ -4,7 +4,7 @@
     * { margin:0; padding:0 }
 
     html, body {
-        font-family: "swap", sans-serif;
+        font-family: 'Lexend Deca', sans-serif; 
         height: 100%
     }
     body {background-color: #ffffff;}
@@ -38,10 +38,58 @@
         transform: rotate(-15deg) scale(1.3);
     }
   
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-1920px);
+            opacity: 0%;
+        }
+        
+        20% {
+            transform: translateX(-1920px);
+            opacity: 0%;
+        }
+
+        100% {
+            transform: translateX(0px);
+            opacity: 100%;
+        }
+        
+    }
+
     .content {
-        display: inline-block;
-        box-sizing: border-box;
-        margin-left: 250px;
+        width: calc(100% - 173px);
+        height: 100%;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        animation-duration: 2s;
+        margin-left: 173px;
+        z-index: 0;
+    }
+
+    .header {
+        margin-top: 150px;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    .year{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:10px;
+        padding: 10px;
+    }
+
+    .grid-items > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
     }
 
 </style>
@@ -49,7 +97,7 @@
 <head>
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Shawn Neal | Home</title>
+    <title> Shawn Neal | Projects</title>
 </head>
 
 <body>
@@ -67,7 +115,20 @@
         </div>
     </div>
     <div class="content">
+        <p class="header">Here is a selection of my most interesting or educational projects.</p>
+        <p class="year">2024</p>
+        <div class="grid-container">
+            <div class="grid-items">
+                <div class="remake-image"></div>
+                <div class="grid-title">Re-Make</div>
+            </div>
 
+            <div class="grid-items">
+                <div class="website-image"></div>
+                <div class="grid-title">This Website!</div>
+            </div>
+        </div>
+        <p class="year">2023</p>
     </div>   
 </body>
 </html>

@@ -2,9 +2,8 @@
 
 <style>
     * { margin:0; padding:0 }
-
     html, body {
-        font-family: "swap", sans-serif;
+        font-family: 'Lexend Deca', sans-serif; 
         height: 100%
     }
     body {background-color: #ffffff;}
@@ -47,10 +46,30 @@
         z-index: 2;
     }
 
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-1920px);
+            opacity: 0%;
+        }
+        
+        20% {
+            transform: translateX(-1920px);
+            opacity: 0%;
+        }
+
+        100% {
+            transform: translateX(0px);
+            opacity: 100%;
+        }
+        
+    }
+
     .content {
         display: inline-block;
         box-sizing: border-box;
         margin-left: 250px;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        animation-duration: 2s;
     }
 
     .name{
@@ -80,6 +99,7 @@
     .inline-spans{
         display: inline;
     }
+    
 
 </style>
 <html>
@@ -113,7 +133,7 @@
                 <span style="color:black" >Science and minoring in Game Arts, alon</span><span style="color:white" >gside</span>
                 <span style="color:black">Mathematics and Music.</span>
             </a>
-            <span class="summary"><a> Why dont you check out some of the </a>
+            <span class="summary"><a> Why don't you check out some of the </a>
                 <a href="Projects.html"> projects</a>
                 <a> I've worked on?</a></span>
         </div>
