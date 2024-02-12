@@ -92,6 +92,30 @@
         
     }
 
+    .active{
+        margin-top: 30px;
+        font-size: 25px;
+        margin-left: 20px;
+        display: inline-block;
+        animation: returnToStraight 0.5s ease-out 0s 1;
+    }
+
+    .active a {
+        color: rgb(170, 44, 44);
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .redirect{
+        color: #aa2c2c;
+        text-decoration: none;
+        transition: transform 0.5s;
+    }
+
+    .redirect:hover{
+        color: rgb(104, 26, 26);;
+    }
+
     .header {
         position: absolute;
         margin-top: 9.25925925925926%;
@@ -99,10 +123,11 @@
         width: 62.5%;
         z-index: 2;
         animation: 2s ease-out 0s 1 slideInFromLeft;
+        border: 2px solid red;
     }
 
-
     .content {
+        border: 2px solid red;
         width: calc(100% - 250px);
         height: 95%;
         margin-left: 250px;
@@ -134,34 +159,6 @@
         padding-top: 25%;
         font-size: 1vw;
         position: absolute;
-    }
-
-    .inline-spans{
-        display: inline;
-    }
-
-    .active{
-        margin-top: 30px;
-        font-size: 25px;
-        margin-left: 20px;
-        display: inline-block;
-        animation: returnToStraight 0.5s ease-out 0s 1;
-    }
-
-    .active a {
-        color: rgb(170, 44, 44);
-        text-decoration: none;
-        text-align: left;
-    }
-    
-    .redirect{
-        color: #aa2c2c;
-        text-decoration: none;
-        transition: transform 0.5s;
-    }
-
-    .redirect:hover{
-        color: rgb(104, 26, 26);;
     }
 
 </style>
