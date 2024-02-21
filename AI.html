@@ -121,6 +121,7 @@
         animation: 2s ease-out 0s 1 slideInFromLeft;
         width: 60%;
         margin-top: 3%;
+        margin-bottom: 2%;
         height: 60%;
         display: block;
         margin-left: auto;
@@ -132,13 +133,12 @@
     }
 
     .text-wrapper{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 2%;
-        font-weight: lighter;
+        position: absolute;
+        margin-left: 20%;
+        margin-right: 20%;
         animation: 2s ease-out 0s 1 slideInFromBottom;
     }
-
+    
 </style>
 <html>
 <head>
@@ -174,8 +174,25 @@
             <img class="image" src="images\shot_of_ai.png">
         </div>
         <div class="text-wrapper">
+            <p class="content-text">In year 13, for my final Secondary School project, I decided to build my own AI model. I intitially
+                was going to build a very basic smart home assistant, comparing to the likes of Siri, Google Assistant and Alexa. As this was 
+                my first forte into developing Artificial Intelligence models, I decided that I would reduce my scope to make it more managable
+                and educational without bogging me down with having to add all of these smart home features.
+            </p>
+            <p class="content-text">So I found some fantastic educational content on how Artificial Intelligence models work under the hood, as well
+                as how to assemble one in Python using TensorFlow and Keras. I decided to build an AI model that can detect Spam messages, I chose this 
+                because I found a couple of fantastic datasets that had clearly and concisely compiled their data, so I could easily extract the data
+                and use it in my model.
+            </p>
+            <p class="content-text">After many tests and tweaks, I managed to create a working Artificial Intelligence model. It was very confident with 
+                it's results, almost always picking either 0 (meaning the text is legitmate) and 1 (meaning the text is spam), here is an example of it's 
+                accurate results.
+            </p>
+            
             <p class="content-text"></p>
-            <p class="content-text"></p>
+            <div class="image-wrapper">
+                <img class="image" src="images\Ai_results.png">
+            </div>
         </div>
     </div>   
 </body>
