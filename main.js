@@ -36,7 +36,7 @@ const orth_camera = new THREE.OrthographicCamera(
   0.1, // near
   1000 // far
 );
-orth_camera.position.set(-1,0,1.7)
+orth_camera.position.set(-0.9,0,1.7)
 
 
 //cube movement
@@ -46,3 +46,4 @@ function animate() {
 	renderer.render( scene, orth_camera );
 
 }
+
