@@ -38,11 +38,29 @@ const orth_camera = new THREE.OrthographicCamera(
 );
 orth_camera.position.set(-0.9,0,1.7)
 
+function resizeCanvasToDisplaySize() {
+  const canvas = renderer.domElement;
+  // look up the size the canvas is being displayed
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+
+  // adjust displayBuffer size to match
+  if (canvas.width !== width || canvas.height !== height) {
+    // you must pass false here or three.js sadly fights the browser
+    renderer.setSize(width, height, false);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+
+    // update any render target sizes here
+  }
+}
 
 //cube movement
 cube.rotation.x +=0.2;
 function animate() {
 	cube.rotation.y += 0.01;
+  resizeCanvasToDisplaySize()
+  
 	renderer.render( scene, orth_camera );
 
 }
