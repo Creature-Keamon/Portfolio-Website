@@ -28,6 +28,24 @@
     <div class="content">
         <p class="header">A selection of my best projects.</p>
 
+        <p class="year">Ongoing</p>
+        <div class="grid-container">
+            
+            <div class="grid-items">
+                <div class="image-container">
+                    <img class="image" src="images\shot_of_game.png">
+                </div>
+                <div class="text-grid">
+                    <p class="item-text">Re-Volt Re-Make</p>
+
+                    <div class="learn-more">
+                        <a class="learn-more-text" href="Re-Make.html">Learn more here!</a>               
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <p class="year">2024</p>
             <div class="grid-container">
                 <div class="grid-items">
@@ -46,20 +64,22 @@
                 </div>
                 <div class="grid-items">
                     <div class="image-container">
-                        <img class="image" src="images\shot_of_game.png">
+                        <img class="image" src="images/Screenshot 2024-06-27 at 9.26.17 PM.png">
                     </div>
                     <div class="text-grid">
-                        <p class="item-text">Re-Volt Re-Make</p>
+                        <p class="item-text">The Traveller's Ring</p>
 
                         <div class="learn-more">
-                            <a class="learn-more-text" href="Re-Make.html">Learn more here!</a>               
+                            <a class="learn-more-text" href="Travellers Ring.html">Learn more here!</a>               
                             
                         </div>
-                    </div>
+                    </div>    
+                
                 </div>
+            
             </div>
 
-        <div class="previous-years">
+
             <p class="year">2023</p>
             <div class="grid-container">
                 <div class="grid-items">
@@ -76,9 +96,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>   
 </body>
 <style>
     * { margin:0; padding:0 }
@@ -219,6 +237,7 @@
         animation: 2s ease-out 0s 1 slideInFromTop;
         position: relative;
         margin-top: 10%;
+        margin-bottom: 5%;
         z-index: 2;
         width: 100%;
         text-align: center;
@@ -228,7 +247,7 @@
     .year{
         overflow: hidden;
         animation: 2s ease-out 0s 1 slideInFromBottom;
-        margin-top: 15%;
+        margin-top: 5%;
         margin-bottom: 2%;
         font-size: 3.125vw;
         position: relative;
@@ -239,15 +258,13 @@
         display: grid;
         margin: auto;
         grid-template-columns: 50% 50%;
-        height: 40%;
         width: 90%;
+        row-gap: 5%;
     }
 
     .grid-items{
-        height: 100%;
-        width: 100%;
-
-        margin-bottom: 10%;
+        height: 38vh;
+        width: 38vw;
     }
 
 
@@ -304,6 +321,7 @@
         padding-top: 1%;
         display: grid;
         grid-template-columns: 50% 50%;
+        padding-bottom: 5%;
     }
 
     .learn-more {
