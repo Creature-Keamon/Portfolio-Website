@@ -38,16 +38,18 @@
                 <h2 class="title">Hey There!</h2>
                 <h1 class="name"><span style="color:black">I'm Shaw</span><span style="color:white">n.</span></h1>
                 <a class="header-flavor">
-                    <span style="color:black">I am currently a student at the University</span><span style="color:white"> of Canterbury,</span>
-                    <span style="color:black">studying a Bachelor of Science, majoring</span><span style="color:white"> in Computer</span>
-                    <span style="color:black" >Science and minoring in Game Arts, alon</span><span style="color:white" >gside</span>
-                    <span style="color:black">Mathematics and Music.</span>
+                    <span style="color:black">I'm a Computer Science and Game Arts st</span><span style="color:white">udent at the </span>
+                    <span style="color:black">University of Canterbury, tech enthusiast</span><span style="color:white"> and aspiring </span>
+                    <span style="color:black">Bass player.</span>
                 </a>
-                <span class="summary"><a> Why don't you check out some of the </a>
-                    <a href="Projects.html" class="redirect"> projects</a>
-                    <a> I've worked on?</a></span>
+                <div class="summary-wrapper">
+                    <span class="summary"><a> Why don't you check out some of the </a>
+                        <a href="Projects.html" class="redirect"> projects</a>
+                        <a> I've worked on?</a></span>
+                </div>
             </div>
-
+            
+        </div>
         </main>
 
         <canvas id="bg"></canvas>
@@ -221,12 +223,17 @@
         animation: 2s ease-out 0s 1 slideInFromTop;
         box-shadow: -2px 0 5px black;
     }
+    .summary-wrapper{
+        border: 2px red solid;
+        padding-top: 25%;
+    }
 
     .summary {
-        margin-top: 25%;
-        margin-left: -10%;
+
+        
+        margin-left: 32%;
         font-size: 1.2vw;
-        position: absolute;
+        position: relative;
     }
 
 </style>
