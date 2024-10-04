@@ -36,11 +36,11 @@
         <div class="content">
             <div class="header">
                 <h2 class="title">Hey There!</h2>
-                <h1 class="name"><span style="color:black">I'm Shaw</span><span style="color:white">n.</span></h1>
+                <h1 class="name"><span style="color:black">I'm Shawn.</span></h1>
                 <a class="header-flavor">
-                    <span style="color:black">I'm a Computer Science and Game Arts st</span><span style="color:white">udent at the </span>
-                    <span style="color:black">University of Canterbury, tech enthusiast</span><span style="color:white"> and aspiring </span>
-                    <span style="color:black">Bass player.</span>
+                    <span class="header-text" style="color:black">I'm a Computer Science and Game Arts student at the </span>
+                    <span class="header-text" style="color:black">University of Canterbury, tech enthusiast and aspiring </span>
+                    <span class="header-text" style="color:black">Bass player.</span>
                 </a>
                 <div class="summary-wrapper">
                     <span class="summary"><a> Why don't you check out some of the </a>
@@ -159,7 +159,6 @@
 
     .nav-link-wrapper a:hover {
         color: red;
-        
     }
 
     .active{
@@ -191,7 +190,7 @@
         margin-left: 1%;
         margin-top: 9.25925925925926%;
         height: 60%;
-        width: 62.5%;
+        width: 70%;
         z-index: 2;
         animation: 2s ease-out 0s 1 slideInFromLeft;
     }
@@ -204,12 +203,17 @@
     }
 
     .name{
-        font-size: 10.9vw;
+        font-size: 12vw;
+        -webkit-text-stroke: 5px white;
     }
 
     .header-flavor {
         padding-top: 8.33333333333333333333333333%;
-        font-size: 2.473958333333333vw;
+        font-size: 3vw;
+    }
+    
+    .header-text {
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     }
 
     .image-insert{
@@ -224,7 +228,7 @@
         box-shadow: -2px 0 5px black;
     }
     .summary-wrapper{
-        padding-top: 25%;
+        padding-top: 15%;
     }
 
     .summary {
