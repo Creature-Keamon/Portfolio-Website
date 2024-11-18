@@ -12,6 +12,41 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setAnimationLoop( animate );
 document.body.appendChild( renderer.domElement );
 
+function getWidth() {
+  return parseInt(window.getComputedStyle(canvas).width);
+}
+
+function getHeight() {
+  return parseInt(window.getComputedStyle(canvas).height);
+}
+
+addEventListener("resize",() => {
+  camera.aspect = getWidth() / getHeight();
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  cube.scale.set(0.5,0.5,0.5);
+},false);
+
+var targetAspectRatio = 16 / 9; //cinematic!
+function aspectSize(availableWidth, availableHeight) {
+  var currentRatio = availableWidth / availableHeight;
+  if (currentRatio > targetAspectRatio) {
+    //then the height is the limiting factor
+    return {
+      width: availableHeight * targetAspectRatio,
+      height: availableHeight
+    };
+  } else {
+    // the width is the limiting factor
+    return {
+      width: availableWidth,
+      height: availableWidth / targetAspectRatio
+    };
+  }
+}
+
+
+
 // Create Cube
 const geometry = new THREE.BoxGeometry( 1, 1.2, 1 );
 //const geometry = new THREE.CylinderGeometry( 0.73, 0.73, 1.4, 8 ); 
