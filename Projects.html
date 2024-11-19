@@ -54,7 +54,7 @@
                         <img class="image" src="images\shot_of_site.png">
                     </div>
                     <div class="text-grid">
-                        <p class="item-text">My Portfolio Website</p>
+                        <div><a class="topic-text">Frontend Development - </a><a class="item-text">My Portfolio Website</a></div>
                     </div>    
                 </div>
             </a>
@@ -322,17 +322,21 @@
         color: black;
     }
 
+    .topic-text {
+        border: red 2px solid;
+        font-size: 1vw;
+        margin-bottom: 10%;
+    }
+
     .text-grid{
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
         animation: 2s ease-out 0s 1 slideInFromBottom;
-        height: 20%;
+        height: 40%;
         width: 90%;
         padding-left: 5%;
         padding-top: 1%;
-        display: grid;
-        grid-template-columns: 30% 70%;
         padding-bottom: 5%;
     }
 
