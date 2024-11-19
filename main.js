@@ -37,26 +37,7 @@ addEventListener("resize",() => {
   cube.scale.set(0.5,0.5,0.5);
 },false);
 
-<<<<<<< HEAD
-=======
-var targetAspectRatio = 16 / 9; //cinematic!
-function aspectSize(availableWidth, availableHeight) {
-  var currentRatio = availableWidth / availableHeight;
-  if (currentRatio > targetAspectRatio) {
-    //then the height is the limiting factor
-    return {
-      width: availableHeight * targetAspectRatio,
-      height: availableHeight
-    };
-  } else {
-    // the width is the limiting factor
-    return {
-      width: availableWidth,
-      height: availableWidth / targetAspectRatio
-    };
-  }
-}
->>>>>>> Updating-project-page
+
 
 
 
