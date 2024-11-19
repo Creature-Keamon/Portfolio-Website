@@ -13,7 +13,7 @@ const camera = new THREE.OrthographicCamera(
   0.1, // near
   1000 // far
 );
-camera.position.set(-0.9,0,1.7)
+camera.position.set(-0.9,-0.1,1.7)
 
 //Setup Renderer
 const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('#bg'), alpha: true});
