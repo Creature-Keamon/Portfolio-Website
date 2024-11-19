@@ -30,6 +30,7 @@
 
         <p class="year">Ongoing</p>
         <div class="grid-container">
+            
             <a class="project-click" href="Re-Make.html">
                 <div class="grid-items">
                     <div class="image-container">
@@ -37,6 +38,15 @@
                     </div>
                     <div class="text-grid">
                         <p class="item-text">Re-Volt Remake</p>
+
+                        <div class="tag-container-grid">
+                            <div class="tag">Video Editing</div>
+                            <div class="tag">Teamwork</div>
+                            <div class="tag">Storywriting</div>
+                            <div class="tag">Filmmaking</div>
+                            <div class="tag">Time Management</div>
+                            <div class="tag">Working under pressure</div>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -256,7 +266,7 @@
         display: grid;
         margin: auto;
         grid-template-columns: 100%;
-        width: 100%;
+        width: 60%;
         row-gap: 10%;
 
     }
@@ -311,6 +321,7 @@
     }
 
     .item-text {
+        border: ;
         font-size: 1.5vw;
         color: black;
     }
@@ -325,30 +336,31 @@
         padding-left: 5%;
         padding-top: 1%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 70%;
         padding-bottom: 5%;
     }
 
-    .learn-more {
+    .tag-container-grid {
+        width: 60%;
+        border: 2px red solid;
+        row-gap: 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
         margin-top: 1%;
-        text-align: right;
-        margin-right: 13%;   
+        text-align: center;
+        margin-right: 0%;   
+
+
     }
 
-    .learn-more-text {
-        height: 10%;
+    .tag {
+        height: 100%;
         width: 100%;
+        border: 2px rgb(154, 154, 154) solid;
+        border-radius: 10px;
         color: black;
-        background-color: white ;
+        background-color: rgb(233, 233, 233) ;
         font-size: 1vw;
-        cursor: pointer;
-        text-decoration: none;
-        border-bottom: 1px solid transparent; /* Initially transparent border */
-        transition: border-bottom 0.5s; /* Transition for the border-bottom property */
-}
-
-    .learn-more-text:hover {
-        border-bottom: 1px solid black; /* Border changes to black on hover */
     }
 
     
