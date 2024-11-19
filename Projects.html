@@ -31,70 +31,69 @@
         <p class="year">Ongoing</p>
         <div class="grid-container">
             
-            <div class="grid-items">
-                <div class="image-container">
-                    <img class="image" src="images\shot_of_game.png">
-                </div>
-                <div class="text-grid">
-                    <p class="item-text">Re-Volt Re-Make</p>
-
-                    <div class="learn-more">
-                        <a class="learn-more-text" href="Re-Make.html">Learn more here!</a>               
-                        
+            <a class="project-click" href="Re-Make.html">
+                <div class="grid-items">
+                    <div class="image-container">
+                        <img class="image" src="images\shot_of_game.png">
+                    </div>
+                    <div class="text-grid">
+                        <p class="item-text">Re-Volt Remake</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </a>
 
-            <p class="year">2024</p>
-            <div class="grid-container">
+            <a class="project-click" href="This site.html">
                 <div class="grid-items">
                     <div class="image-container">
                         <img class="image" src="images\shot_of_site.png">
                     </div>
                     <div class="text-grid">
                         <p class="item-text">My Portfolio Website</p>
-
-                        <div class="learn-more">
-                            <a class="learn-more-text" href="This site.html">Learn more here!</a>               
-                            
-                        </div>
                     </div>    
-                
                 </div>
-                <div class="grid-items">
-                    <div class="image-container">
-                        <img class="image" src="images/Screenshot 2024-06-27 at 9.26.17 PM.png">
+            </a>
+        </div>
+
+            <p class="year">2024</p>
+            <div class="grid-container">
+                <a class="project-click" href="Travellers Ring.html">
+                    <div class="grid-items">
+                        <div class="image-container">
+                            <img class="image" src="images/Screenshot 2024-06-27 at 9.26.17 PM.png">
+                        </div>
+                        <div class="text-grid">
+                            <p class="item-text">The Traveller's Ring</p>
+                        </div>    
                     </div>
-                    <div class="text-grid">
-                        <p class="item-text">The Traveller's Ring</p>
-
-                        <div class="learn-more">
-                            <a class="learn-more-text" href="Travellers Ring.html">Learn more here!</a>               
-                            
-                        </div>
-                    </div>    
-                
-                </div>
+                </a>
             
+                <a class="project-click" href="Ammit The Truth.html">
+                    <div class="grid-items">
+                        <div class="image-container">
+                            <img class="image" src="images/Ammit.png">
+                        </div>
+                        <div class="text-grid">
+                            <p class="item-text">Ammit the Truth</p>
+                        </div>    
+                    </div>
+                </a>
             </div>
 
+            
+           
 
             <p class="year">2023</p>
             <div class="grid-container">
-                <div class="grid-items">
-                    <div class="image-container">
-                        <img class="image" src="images\shot_of_ai.png">
-                    </div>
-                    <div class="text-grid">
-                        <p class="item-text">Spam Detection AI</p>
-
-                        <div class="learn-more">
-                            <a class="learn-more-text" href="AI.html">Learn more here!</a>               
-                            
+                <a class="project-click" href="AI.html">
+                    <div class="grid-items">
+                        <div class="image-container">
+                            <img class="image" src="images\shot_of_ai.png">
+                        </div>
+                        <div class="text-grid">
+                            <p class="item-text">Spam Detection AI</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 </body>
@@ -247,7 +246,7 @@
     .year{
         overflow: hidden;
         animation: 2s ease-out 0s 1 slideInFromBottom;
-        margin-top: 5%;
+        margin-top: 15%;
         margin-bottom: 2%;
         font-size: 3.125vw;
         position: relative;
@@ -257,15 +256,20 @@
     .grid-container{
         display: grid;
         margin: auto;
-        grid-template-columns: 50% 50%;
-        width: 90%;
-        column-gap: 0.9%;
-        row-gap: 5%;
+        grid-template-columns: 100%;
+        width: 60%;
+        row-gap: 10%;
+
     }
 
     .grid-items{
-        height: 38vh;
-        width: 38vw;
+        margin: auto;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .project-click {
+        text-decoration: none;
     }
 
 
@@ -309,6 +313,7 @@
 
     .item-text {
         font-size: 1.5vw;
+        color: black;
     }
 
     .text-grid{
@@ -321,29 +326,31 @@
         padding-left: 5%;
         padding-top: 1%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 70%;
         padding-bottom: 5%;
     }
 
-    .learn-more {
-        text-align: right;
-        margin-right: 13%;   
+    .tag-container-grid {
+        width: 60%;
+        border: 2px red solid;
+        row-gap: 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 1%;
+        text-align: center;
+        margin-right: 0%;   
+
+
     }
 
-    .learn-more-text {
-        height: 10%;
+    .tag {
+        height: 100%;
         width: 100%;
+        border: 2px rgb(154, 154, 154) solid;
+        border-radius: 10px;
         color: black;
-        background-color: white ;
+        background-color: rgb(233, 233, 233) ;
         font-size: 1vw;
-        cursor: pointer;
-        text-decoration: none;
-        border-bottom: 1px solid transparent; /* Initially transparent border */
-        transition: border-bottom 0.5s; /* Transition for the border-bottom property */
-}
-
-    .learn-more-text:hover {
-        border-bottom: 1px solid black; /* Border changes to black on hover */
     }
 
     
