@@ -36,72 +36,66 @@
 
         <p class="year">Ongoing</p>
         <div class="grid-container">
-            
             <a class="project-click" href="Re-Make.html">
                 <div class="grid-items">
                     <div class="image-container">
                         <img class="image" src="images\shot_of_game.png">
                     </div>
                     <div class="text-grid">
-                        <p class="item-text">Re-Volt Remake</p>
+                        <div><p class="topic-text">Game Development</p><p class="item-text">Re-Volt Remake</p></div>
                     </div>
                 </div>
             </a>
-
             <a class="project-click" href="This site.html">
                 <div class="grid-items">
                     <div class="image-container">
                         <img class="image" src="images\shot_of_site.png">
                     </div>
                     <div class="text-grid">
-                        <div><a class="topic-text">Frontend Development - </a><a class="item-text">My Portfolio Website</a></div>
+                        <div><p class="topic-text">Front End Development</p><p class="item-text">My Portfolio Website</p></div>
                     </div>    
                 </div>
             </a>
         </div>
 
-            <p class="year">2024</p>
-            <div class="grid-container">
-                <a class="project-click" href="Travellers Ring.html">
-                    <div class="grid-items">
-                        <div class="image-container">
-                            <img class="image" src="images/Screenshot 2024-06-27 at 9.26.17 PM.png">
-                        </div>
-                        <div class="text-grid">
-                            <p class="item-text">The Traveller's Ring</p>
-                        </div>    
+        <p class="year">2024</p>
+        <div class="grid-container">
+            <a class="project-click" href="Travellers Ring.html">
+                <div class="grid-items">
+                    <div class="image-container">
+                        <img class="image" src="images/Screenshot 2024-06-27 at 9.26.17 PM.png">
                     </div>
-                </a>
-            
-                <a class="project-click" href="Ammit The Truth.html">
-                    <div class="grid-items">
-                        <div class="image-container">
-                            <img class="image" src="images/Ammit.png">
-                        </div>
-                        <div class="text-grid">
-                            <p class="item-text">Ammit the Truth</p>
-                        </div>    
+                    <div class="text-grid">
+                        <div><p class="topic-text">Filmmaking</p><p class="item-text">The Travellers Ring</p></div>
+                    </div>    
+                </div>
+            </a>   
+            <a class="project-click" href="Ammit The Truth.html">
+                <div class="grid-items">
+                    <div class="image-container">
+                        <img class="image" src="images/Ammit.png">
                     </div>
-                </a>
-            </div>
-
-            
-           
-
-            <p class="year">2023</p>
-            <div class="grid-container">
-                <a class="project-click" href="AI.html">
-                    <div class="grid-items">
-                        <div class="image-container">
-                            <img class="image" src="images\shot_of_ai.png">
-                        </div>
-                        <div class="text-grid">
-                            <p class="item-text">Spam Detection AI</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    <div class="text-grid">
+                        <div><p class="topic-text">Game Development</p><p class="item-text">Ammit The Truth</p></div>
+                    </div>    
+                </div>
+            </a>
         </div>
+
+        <p class="year">2023</p>
+        <div class="grid-container">
+            <a class="project-click" href="AI.html">
+                <div class="grid-items">
+                    <div class="image-container">
+                        <img class="image" src="images\shot_of_ai.png">
+                    </div>
+                    <div class="text-grid">
+                        <div><p class="topic-text">Artificial Intelligence Development</p><p class="item-text">Spam Detection AI</p></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 <style>
     * { margin:0; padding:0 }
@@ -252,7 +246,7 @@
     .year{
         overflow: hidden;
         animation: 2s ease-out 0s 1 slideInFromBottom;
-        margin-top: 15%;
+        margin-top: 10%;
         margin-bottom: 2%;
         font-size: 3.125vw;
         position: relative;
@@ -264,18 +258,19 @@
         margin: auto;
         grid-template-columns: 100%;
         width: 60%;
-        row-gap: 10%;
-
+        height: 120vh;
     }
 
     .grid-items{
-        margin: auto;
+        position:relative;
         height: 50vh;
         width: 50vw;
     }
 
     .project-click {
         text-decoration: none;
+        width: 50vw;
+        height: 50vh;
     }
 
 
@@ -313,19 +308,16 @@
         box-shadow: 0 0 5px black;
     }
 
-    .previous-years{
-        margin-top: 7%;
-    }
-
     .item-text {
-        font-size: 1.5vw;
+        font-size: 2vw;
+        margin-top: 1%;
         color: black;
     }
 
     .topic-text {
-        border: red 2px solid;
         font-size: 1vw;
-        margin-bottom: 10%;
+        margin-top: 1%;
+        color: black;
     }
 
     .text-grid{
@@ -333,34 +325,9 @@
         margin-left: auto;
         margin-right: auto;
         animation: 2s ease-out 0s 1 slideInFromBottom;
-        height: 40%;
+        height: 20%;
         width: 90%;
         padding-left: 5%;
-        padding-top: 1%;
-        padding-bottom: 5%;
-    }
-
-    .tag-container-grid {
-        width: 60%;
-        border: 2px red solid;
-        row-gap: 10%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        margin-top: 1%;
-        text-align: center;
-        margin-right: 0%;   
-
-
-    }
-
-    .tag {
-        height: 100%;
-        width: 100%;
-        border: 2px rgb(154, 154, 154) solid;
-        border-radius: 10px;
-        color: black;
-        background-color: rgb(233, 233, 233) ;
-        font-size: 1vw;
     }
 
     .box{
