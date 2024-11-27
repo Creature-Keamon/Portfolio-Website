@@ -28,22 +28,35 @@
     </div>
     <div class="content">
         <div class="header-container">
-            <p class="header">About Shawn.</p>
+            <p class="header">A Little About Me.</p>
+        </div>
+        <div class="introduction">
+            <p>I am a student programmer, 3D artist, designer, aspiring bass player and video editor from New Zealand, studying Computer Science and Game Arts
+            at the University of Canterbury.</p>
         </div>
 
-        <div class="box">
-            <div class="link-wrapper">
-            <a class="link" target="_blank" href="">LinkedIn</a>
+        <div class="sub-heading">
+            <p>How I work</p>
+        </div>
+        <div class="sub-text">
+            <p>I like to think outside the box, and consider how my decisions affect the wider project and the world </p>
+        </div>
+        
+        <div class="boxes">
+            <div class="box">
+                <div class="link-wrapper">
+                <a class="link" target="_blank" href="https://www.linkedin.com/in/shawn-neal-621028319/">LinkedIn</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="link-wrapper">
+                <a class="link" target="_blank" href="images\CV.pdf">CV</a>
+                </div>
             </div>
         </div>
-
-        <div class="introduction">
-            <p>I am a student programmer, 3D artist, designer and video editor from New Zealand, studying Computer Science and Game Arts
-                at the University of Canterbury
-            </p>
-        </div>
-       
-        
+    </div>
+    <canvas id="bg"></canvas>
+    <script type="module" src="./main.js"></script>
 </body>
 <style>
     * { margin:0; padding:0 }
@@ -52,6 +65,12 @@
         font-weight: 300;
         font-style: normal;
         height: 100%
+    
+    }
+
+    body, html {
+        margin: 0;
+        padding:0;
     }
 
     body {background-color: white;}
@@ -120,9 +139,18 @@
         }
     }
 
+    canvas {
+        left: 0;
+        top: 0;
+        position:absolute;
+        animation: 2s ease-out 0s 1 slideInFromTop ;
+        width: 99% !important;
+        height: 100vh !important;
+        display: block;
+    }
 
     .content {
-        width: calc(100% - 375px);
+        width: calc(100% - 250px);
         height: 100%;
         margin-left: 250px;
         z-index: 0;
@@ -162,7 +190,7 @@
     }
 
     .nav-link-wrapper a:hover {
-        color: #2C38AB;
+        color: #2c38ab;
         
     }
 
@@ -183,32 +211,62 @@
     .header {
         overflow: hidden;
         animation: 2s ease-out 0s 1 slideInFromTop;
-        position: relative;
-        margin-top: 10%;
-        margin-bottom: 5%;
+        margin-top: 42vh;
+        margin-bottom: 0;
         z-index: 2;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    .sub-heading {
+        overflow: hidden;
+        animation: 2s ease-out 0s 1 slideInFromBottom;
+        margin-top: 40vh;
+        margin-bottom: 0;
+        z-index: 2;
+        width: 90%;
+        text-align: right;
         font-size: 4vw;
     }
 
     .introduction {
-        text-align: center;
+        width: 50%;
+        text-align: left;
         animation: slideInFromBottom 2s ease-out 0s 1;
-        font-size: 2vw;
-        font-weight: 100;
-        margin-top: 20%;
+        font-size: 1.5vw;
+        font-weight: 150;
+        margin-top: 1%;
         margin-bottom: 1%;
+    }
+
+    .sub-text {
+        border: red solid 2px;
+        float: right;
+        width: 50%;
+        text-align: right;
+        animation: slideInFromBottom 2s ease-out 0s 1;
+        font-size: 1.5vw;
+        font-weight: 150;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 10%;
+    }
+
+    .boxes {
+        border: blue 2px solid;
+        width: 100%;
+        height: 100%;
     }
 
     .box{
         animation: 2s ease-out 0s 1 slideInFromBottom;
-        margin-top: 5%;
+        margin-top: 1%;
         border: 2px solid rgb(210, 210, 210);
         border-radius: 10px;
-        width: 10%;
+        width: 7vw;
         text-align: center;
-        margin-left: 45%;
+        float: right;
     }
     
     .link-wrapper{
@@ -231,111 +289,3 @@
 
 </style>
 <html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <meta charset = "UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
-    <title> Shawn Neal | About</title>
-</head>
-
-<body>
-    <div class="background"></div>
-    <div class="navigation-pane"></div>
-    <div class="nav-buttons">
-        <div class="nav-link-wrapper">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="nav-link-wrapper">
-            <a href="Projects.html">Projects</a>
-        </div>
-        <div class="active">
-            <a>About</a>
-        </div>
-    </div>
-    <div class="content">
-        <div class="header-container">
-            <p class="header">Everything you need to know.</p>
-            <p class="header-flavor">(and some things you don't.)</p>
-        </div>
-        <div class="about-container">
-            <div class="left-container">
-                <div class="left-wrapper">
-                    <p class="about-title">Academics</p>
-                    <a class="about-text">
-                        <span style="color:black">As a student at Rolleston College, I achieved: NCEA Level 3 Endorsed with Excellence, NCEA Level 2 Endorsed with Excellence, NCEA Level 1 Endorsed with Merit. 
-                            I was also a student leader in my final year as well as a peer support leader.</span>
-                </div>
-                <div class="image-insert-left"></div>
-            </div>
-
-            <div class="right-container">
-                <div class="right-wrapper">
-                    <p class="about-title">Skills and Traits</p>
-                    <a class="about-text">
-                       <span style="color: black;">My best trait is my incredible creativity, with one example being my unique and dynamic solution to </span>
-                       <span style="color: black;">Recycle A Device's retention problem for E Whiti! E Whiti! I am also very tech literate, having incredible </span>
-                       <span style="color: black;">knowledge about how to solve many different tech issues, understanding computer hardware and the </span>
-                       <span style="color: black;">software that drives it. I also can quickly adapt to using new software quickly and am currently improving </span>
-                       <span style="color: black;">my knowledge and skills with computer programming (this website is an example of this!). I have a well </span>
-                       <span style="color: black;"> developed and continuously improving communication skills, having presented to CEOs of local </span>
-                       <span style="color: black;">businesses, and a member of the Ministry of Education and found success in a Retail Environment. I am </span>
-                       <span style="color: black;">a quick learner and very reliable, as I have a competent memory and remember to do tasks or follow up </span>
-                       <span style="color: black;">on things. I have an incredible attention to detail, and notice the small details that others may miss. An </span>
-                       <span style="color: black;">effective team player, I have worked in many teams, as I have led teams of friends for E Whiti! E Whiti! </span>
-                       <span style="color: black;">to create a fleshed out and realistic solution to our designated problem, in the 2023 University of  </span>
-                       <span style="color: black;">Canterbury Programming Competition and the captained the Rolleston College Esports team back in 2022. </span>
-                    </a>
-                </div>
-                <div class="image-insert-right"></div>
-            </div>
-
-            <div class="left-container">
-                <div class="left-wrapper">
-                    <p class="about-title">Work Experience</p>
-                    <a class="about-text">
-                        <span style="color:black">My most recent job was working as a Christmas Casual at Briscoes Homewares in Hornby. In this job I</span>
-                        <span style="color:black"> gained invaluable customer service, communication, and has given me a taste of the world of retail. I</span>
-                        <span style="color:black">have also worked as an English Tutor for Primar Schoolers, gaining communication skills and the ability </span>
-                        <span style="color:black">to adapt to the current situation. I have ran my own business selling CNC machine carved wooden </span>
-                        <span style="color:black">signs, in this job I have gained skills with painting, woodworking, as well as managing clients and their </span>
-                        <span style="color:black">needs. I also worked doing a paper-run, giving me skills with time management and ensuring the task </span>
-                        <span style="color:black">gets done on time.</span>
-    
-                    </a>
-                </div>
-                <div class="image-insert-left"></div>
-            </div>
-
-            <div class="right-container">
-                <div class="right-wrapper">
-                    <p class="about-title">Extra Curriculars</p>
-                    <a class="about-text">
-                        <span style="color:black">I have particpated in many extracurriculars, from being a student leader at Rolleston College, to particpating in 
-                        the first University of Canterbury Game Jam and their Programming Competition in 2023. I have exhibited my Young Enterprise Scheme business at the Christchurch Innovation Expo, participated 
-                        in Core Education's E Whiti! E Whiti! programme 2 years in a row, as well as being one of 10 foundation students for it. I captained the Rolleston College Esports Team in 2022, and ran 
-                        frequent training sessions, not just for the team but for anyone interested in learning. 
-                        </span>                        
-                    </a>
-                </div>
-                <div class="image-insert-right"></div>
-            </div>
-
-            <div class="left-container">
-                <div class="left-wrapper">
-                    <p class="about-title">Passions and Interests</p>
-                    <a class="about-text">
-                        <span style="color:black">I really enjoy computer programming, having made a multitude of things, including this website and an artificial intelligence model.
-                        I also dabble in digital art, having made things in Blender such as the torso of a game character I like as well as a lecture hall in Blender. I love all things to 
-                        to do with computers, such as building them, repairing and technical support for people that need it (generally my friends) and keep up with the latest in tech news.
-                        I enjoy video editing, and am currently learning how to play the Bass Guitar, which I intend to use to write my own song in a band and perform them live
-                    </a>
-                </div>
-                <div class="image-insert-left"></div>
-            </div>
-        </div>
-    </div>   
-</body>
-</html>

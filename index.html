@@ -39,8 +39,7 @@
                 <h1 class="name"><span style="color:black">I'm Shawn.</span></h1>
                 <a class="header-flavor">
                     <span class="header-text" style="color:black">I'm a Computer Science and Game Arts student at the </span>
-                    <span class="header-text" style="color:black">University of Canterbury, tech enthusiast and aspiring </span>
-                    <span class="header-text" style="color:black">Bass player.</span>
+                    <span class="header-text" style="color:black">University of Canterbury.</span>
                 </a>
                 <div class="summary-wrapper">
                     <span class="summary"><a> Why don't you check out some of the </a>
@@ -63,7 +62,6 @@
     * { margin:0; padding:0 }
     html, body, content {
         width: 100%;
-
         font-family: "Roboto", sans-serif;
         font-weight: 300;
         font-style: normal;
@@ -119,12 +117,12 @@
     }
     
     canvas {
-        
         top: -5%;
         left: 0;
         animation: 2s ease-out 0s 1 slideInFromTop ;
-        width: 100%;
-        height: 100vh;
+        width: 100vw !important;
+        height: 100vh !important;
+        display: block;
     }
 
     .nav-buttons {
@@ -199,7 +197,7 @@
     }
 
     .content {
-        width: calc(100% - 250px);
+        width: calc(95% - 250px);
         height: 95%;
         margin-left: 250px;
         z-index: 0;
@@ -217,18 +215,6 @@
     
     .header-text {
         text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-    }
-
-    .image-insert{
-        margin-left:44.8% ;
-        margin-top: 5%;
-        width: 31.25%;
-        height: 35vw;
-        background-color: rgb(170, 44, 44);
-        position: absolute;
-        z-index: 1;
-        animation: 2s ease-out 0s 1 slideInFromTop;
-        box-shadow: -2px 0 5px black;
     }
     .summary-wrapper{
         padding-top: 15%;
