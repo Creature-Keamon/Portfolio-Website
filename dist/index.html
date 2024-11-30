@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+    <title> Shawn Neal | Home</title>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.165.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.165.0/examples/jsm/"
+          }
+        }
+      </script>
+  <script type="module" crossorigin src="/Portfolio-Website/assets/main-9V4Gv1Z4.js"></script>
+  <link rel="modulepreload" crossorigin href="/Portfolio-Website/assets/three.module-Dh1LqFEf.js">
+</head>
+
+<body>
+    <main>
+        <div class="background"></div>
+        <div class="navigation-pane"></div>
+        <div class="nav-buttons">
+            <div class="active">
+                <a>Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="projects/index.html">Projects</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="about/index.html">About</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h2 class="title">Hey There!</h2>
+                <h1 class="name"><span style="color:black">I'm Shawn.</span></h1>
+                <a class="header-flavor">
+                    <span class="header-text" style="color:black">I'm a Computer Science and Game Arts student at the </span>
+                    <span class="header-text" style="color:black">University of Canterbury.</span>
+                </a>
+                <div class="summary-wrapper">
+                    <span class="summary"><a> Why don't you check out some of the </a>
+                        <a href="projects/index.html" class="redirect"> projects</a>
+                        <a> I've worked on?</a></span>
+                </div>
+            </div>
+            
+        </div>
+        </main>
+
+        <canvas id="bg"></canvas>
+    </div>   
+
+    
+</body>
+
+<style>
+    * { margin:0; padding:0 }
+    html, body, content {
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        height: 100%
+    }
+
+    body {background-color: white;}
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-3840px);
+            opacity: 0;
+        }
+        
+        20% {
+            transform: translateX(-1920px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+    }
+
+    @keyframes slideInFromTop {
+        0% {
+            transform: translateY(-2160px);
+            opacity: 0;
+        }
+        
+        20% {
+            transform: translateY(-1080px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+    }
+
+    @keyframes returnToStraight {
+        0% {
+            transform: rotate(-15deg) scale(1.3);
+        }
+
+        100% {
+            transform: rotate(0deg) scale(1);
+        }
+    }
+    
+    canvas {
+        top: -5%;
+        left: 0;
+        animation: 2s ease-out 0s 1 slideInFromTop ;
+        width: 100vw !important;
+        height: 100vh !important;
+        display: block;
+    }
+
+    .nav-buttons {
+        text-decoration: none;
+        width: 173px;
+        height: 100%;
+        top: 36%;
+        position: fixed;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: 1; 
+    }
+
+    .nav-link-wrapper {
+        margin-top: 30px;
+        font-size: 25px;
+        transition: transform 0.5s;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .nav-link-wrapper a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .nav-link-wrapper:hover {
+        transform: rotate(-15deg) scale(1.3);
+    }
+
+    .nav-link-wrapper a{
+        transition: color 0.5s;
+    }
+
+    .nav-link-wrapper a:hover {
+        color: red;
+    }
+
+    .active{
+        margin-top: 30px;
+        font-size: 25px;
+        margin-left: 20px;
+        display: inline-block;
+        animation: returnToStraight 0.5s ease-out 0s 1;
+    }
+
+    .active a {
+        color: rgb(170, 44, 44);
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .redirect{
+        color: #aa2c2c;
+        text-decoration: none;
+        transition: transform 0.5s;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+    }
+
+    .redirect:hover{
+        color: #681a1a;
+        border-bottom: #681a1a 1px solid;
+    }
+
+    .header {
+        position: absolute;
+        margin-left: 1%;
+        margin-top: 9.25925925925926%;
+        height: 60%;
+        width: 70%;
+        z-index: 2;
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .content {
+        width: calc(95% - 250px);
+        height: 95%;
+        margin-left: 250px;
+        z-index: 0;
+    }
+
+    .name{
+        font-size: 12vw;
+        -webkit-text-stroke: 5px white;
+    }
+
+    .header-flavor {
+        padding-top: 8.33333333333333333333333333%;
+        font-size: 3vw;
+    }
+    
+    .header-text {
+        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    }
+    .summary-wrapper{
+        padding-top: 15%;
+    }
+
+    .summary {
+        margin-left: 32%;
+        font-size: 1.2vw;
+        position: relative;
+    }
+
+</style>
+</html>
